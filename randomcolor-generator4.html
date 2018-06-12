@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<style>
+	
+	
+	
+</style>
+
+<script type="text/javascript">
+    function zoomin(){
+        var myImg = document.getElementById("colorpad2");
+        var currWidth = myImg.clientWidth;
+        if(currWidth == 800){
+            alert("Maximum zoom-in level reached.");
+        } else{
+            myImg.style.width = (currWidth + 50) + "px";
+        } 
+    }
+    function zoomout(){
+        var myImg = document.getElementById("colorpad2");
+        var currWidth = myImg.clientWidth;
+        if(currWidth == 2){
+            alert("Maximum zoom-out level reached.");
+        } else{
+            myImg.style.width = (currWidth - 100) + "px";
+        }
+    }
+</script>
+	
+<script>
+	
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+function setRandomColor() {
+  $("#colorpad").css("background-color", getRandomColor());
+	$("#colorpad2").css("background-color", getRandomColor());
+	$("#colorpad3").css("background-color", getRandomColor());
+	$("#colorpad4").css("background-color", getRandomColor());
+	$("#colorpad5").css("background-color", getRandomColor());
+	$("#colorpad6").css("background-color", getRandomColor());
+	$("#colorpad7").css("background-color", getRandomColor());
+	$("#colorpad8").css("background-color", getRandomColor());
+	$("#colorpad8").css("background-color", getRandomColor());
+	$("#colorpad9").css("background-color", getRandomColor());
+	$("#colorpad10").css("background-color", getRandomColor());
+}
+
+	
+	
+	</script>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	
+	
+<body onload="setRandomColor()">
+<button type="button" onclick="zoomin()"><img src="/images/"> Zoom In</button>
+        <button type="button" onclick="zoomout()"><img src="/examples/images/zoom-out.png"> Zoom Out</button>
+<div>
+	<div id="colorpad" style="width:15px;height:600px;background-color:#333; float:left;
+	-webkit-transition: width 3s; 
+    -webkit-transition-timing-function: ease; 
+    transition: width 3s;
+    transition-timing-function: ease;"><p></p><br></div></div>
+	
+
+<div>
+<div id="colorpad2" onclick="zoomin()"  style="width:15px;height:600px;background-color:#999;float:left;-webkit-transition: width 3s; 
+    -webkit-transition-timing-function: ease; 
+    transition: width 3s;
+    transition-timing-function: ease;">
+	</div>
+</div>
+<div>
+<div id="colorpad3" style="width:15px;height:600px;background-color:#999;float:left;">
+	</div>
+</div>
+<div>
+<div id="colorpad4" style="width:15px;height:600px;background-color:#999;float:left;">
+	</div>
+</div>
+<div>
+<div id="colorpad5"
+onclick="setRandomColor()" style="width:15px;height:600px;background-color:#999;float:left;">
+	</div>
+</div>
+<div>
+<div id="colorpad6" style="width:15px;height:600px;background-color:#999;float:left;">
+	</div>
+</div>
+<div>
+<div id="colorpad7"
+onclick="setRandomColor()" style="width:15px;height:600px;background-color:#999;float:left;">
+	</div>
+</div>
+<div>
+<div id="colorpad8" style="width:15px;height:600px;background-color:#999;float:left;">
+	</div>
+</div>
+<div>
+<div id="colorpad9"
+ style="width:15px;height:600px;background-color:#999;float:left;">
+	</div>
+</div>
+<div>
+<div id="colorpad10"
+onclick="setRandomColor()" style="width:15px;height:600px;background-color:#999;float:left;">
+	</div>
+</div>
+<br>
+<button onclick="setRandomColor()">Random Color</button>	
+
+</body>
+</html>

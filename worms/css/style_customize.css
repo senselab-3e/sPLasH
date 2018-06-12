@@ -1,0 +1,39 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    background: #ffffff; /* Old browsers */
+	background-image: url(../adam_1.jpg);
+	background-color: white;
+
+    overflow: hidden;
+    margin: 0;
+}
+
+/* Info */
+
+p {color: white}
+
+#info {
+    font-size: 12px;
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    width: 220px;
+    left: 20px;
+    top: 20px;
+}
+
+
+#container{
+	z-index: 0;
+}
+
+#projector{
+	z-index: 1
+}
+

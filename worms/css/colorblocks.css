@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*so i can't nest the color palette inside the canvas --- i can only have the position absolute, and height etc so that it moes above the canvas */
+
+.colorblock {
+	
+	float: left;
+	width: 25px;
+	height: 25px;
+	padding:2px;
+	
+	
+}
+
+.buttons {
+	float:left;
+	padding-left:2px;	
+}
+
+#green {
+	background-color: green;
+	
+}
+
+#orange {
+	background-color: orange;
+}
+
+#blue {
+	background-color: blue;
+}
+
+#red {
+	background-color: red;
+}
+#yellow {
+	background-color: yellow;
+}
+#white {
+	background-color: white;
+}
+#black {
+	background-color: black;
+}
+
